@@ -94,6 +94,10 @@ function App() {
 
       <div className='mortgagePriceContainer container'>
         <div className={showResults ? "resultsBackgroundCover" : "resultsBackgroundCover active"}>
+
+          <section className='resultsMain container'>
+
+
           <div className='resultsBox '>
             <div className='resultsHeaderBox'>
             <p>Estimated Total Monthly Payment</p>
@@ -101,6 +105,8 @@ function App() {
             <p className='monthlyAmountText'>${calculateAmount}</p>
             <button className='reCalculateBtn' onClick={handleCloseResults}>Re-Calculate</button>
           </div>
+
+          </section>
         </div>
         <div className='userInfoContainer container'>
           <label style={{ margin: "10px"}}>Price of the Home</label>
@@ -114,16 +120,19 @@ function App() {
           <label style={{ margin: "10px"}}>Loan Term</label>
         <select onChange={(e) => setMortgageTerm(e.target.value)} value={mortgageTerm} className='form-control'>
           <option  selected value="">Choose Your Loan Term</option>
-          <option value="10">10 Year</option>
-          <option value="15">15 Year</option>
-          <option value="20">20 Year</option>
-          <option value="25">25 Year</option>
-          <option value="30">30 Year</option>
+          <option value="10">10 Years</option>
+          <option value="15">15 Years</option>
+          <option value="20">20 Years</option>
+          <option value="25">25 Years</option>
+          <option value="30">30 Years</option>
         </select>
         </div>
         <div className='userInfoContainer container'>
           <label style={{ margin: "10px"}}>Interest Rate %</label>
-        <input  maxLength="5" type='number' onChange={(e) => setInterestRate(e.target.value)} value={interestRate} className='form-control' placeholder='0.0%' />
+          <div style={{ display: "flex" , alignItems: "center", gap: "4px"}}>
+          <input  maxLength="5" type='number' onChange={(e) => setInterestRate(e.target.value)} value={interestRate} className='form-control' placeholder='0' />
+          <p style={{ margin: "0px"}}>%</p>
+          </div>
         </div>
         <button disabled={showCalculateBtn} onClick={handleCalculation} className={showCalculateBtn ? "calculateBtn active " : "calculateBtn" }>Calculate</button>
 
