@@ -87,6 +87,7 @@ function App() {
         <div className='line1 shadow-lg'></div>
         <div className='line2 shadow-lg'></div>
 
+        <main className='container'>
       <nav className=''>
         <h1 style={{ marginTop: "40px", fontSize: "22px"}}>Mortgage Payment Calculator</h1>
       </nav>
@@ -127,8 +128,11 @@ function App() {
         <button disabled={showCalculateBtn} onClick={handleCalculation} className={showCalculateBtn ? "calculateBtn active " : "calculateBtn" }>Calculate</button>
 
       </div>
+      </main>
+
       <footer> &copy; 2024 Designed & Developed by Qunnderrie </footer>
     </div>
+    
   );
 }
 
