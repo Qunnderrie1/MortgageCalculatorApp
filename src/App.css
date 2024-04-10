@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   position: relative;
-  height: 100%;
+  height: 100vh;
  background-color: rgb(64, 26, 114);
  font-family: "Open Sans", sans-serif;
  background-image: url('./Images/home.jpg');
@@ -23,22 +23,6 @@ height: 100%;
   
 }
 
-.line1{
-  width: 100%;
-  height: 100px;
-  background-color: orange;
-  position: absolute;
-  bottom: 0px;
-  clip-path: polygon(0 91%, 100% 10%, 100% 100%, 0% 100%);
-}
-.line2{
-  width: 100%;
-  height: 100px;
-  background-color: rgb(208, 135, 0);
-  position: absolute;
-  bottom: 0px;
-  clip-path: polygon(0 98%, 100% 100%, 100% 100%, 0% 10%);
-}
 
 .resultsBackgroundCover{
   background-color: rgb(0, 0, 0, 0.9);
