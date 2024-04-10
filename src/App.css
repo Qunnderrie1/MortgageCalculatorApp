@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   position: relative;
-  height: 100vh;
+  height: 100%;
  background-color: rgb(64, 26, 114);
  font-family: "Open Sans", sans-serif;
  background-image: url('./Images/home.jpg');
@@ -11,6 +11,7 @@
 }
 
 body{
+
 }
 
 .backgroundAppCover{
@@ -105,7 +106,7 @@ nav h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 80px auto;
+  margin: 20px auto;
   background-color: white;
   padding: 20px;
   border-radius: 4px;
