@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MortgageCalculatorApp/static/css/main.7920d565.css",
+    "main.css": "/MortgageCalculatorApp/static/css/main.4eb631c5.css",
     "main.js": "/MortgageCalculatorApp/static/js/main.747974be.js",
     "static/media/home.jpg": "/MortgageCalculatorApp/static/media/home.2fbd7cd5c29093d055f9.jpg",
     "index.html": "/MortgageCalculatorApp/index.html",
-    "main.7920d565.css.map": "/MortgageCalculatorApp/static/css/main.7920d565.css.map",
+    "main.4eb631c5.css.map": "/MortgageCalculatorApp/static/css/main.4eb631c5.css.map",
     "main.747974be.js.map": "/MortgageCalculatorApp/static/js/main.747974be.js.map"
   },
   "entrypoints": [
-    "static/css/main.7920d565.css",
+    "static/css/main.4eb631c5.css",
     "static/js/main.747974be.js"
   ]
 }
