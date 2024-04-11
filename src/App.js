@@ -89,10 +89,9 @@ function App() {
 
         <main className='container'>
       <nav className=''>
-        <h1 style={{ marginTop: "40px", fontSize: "22px"}}>Mortgage Payment Calculator</h1>
       </nav>
 
-      <div className='mortgagePriceContainer container'>
+      <div className='mortgagePriceContainer '>
         <div className={showResults ? "resultsBackgroundCover" : "resultsBackgroundCover active"}>
 
           <section className='resultsMain container'>
@@ -108,6 +107,14 @@ function App() {
 
           </section>
         </div>
+        <div className='headerContainer'>
+        <h1 style={{  fontSize: "22px"}}>Mortgage Payment Calculator</h1>
+
+        </div>
+
+        <main>
+
+
         <div className='userInfoContainer container'>
           <label style={{ margin: "10px"}}>Price of the Home</label>
           <input type='number' onChange={(e) => setMortgageAmount(e.target.value)} value={mortgageAmount} className='form-control' placeholder='$0' />
@@ -135,7 +142,7 @@ function App() {
           </div>
         </div>
         <button disabled={showCalculateBtn} onClick={handleCalculation} className={showCalculateBtn ? "calculateBtn active " : "calculateBtn" }>Calculate</button>
-
+        </main>
       </div>
       </main>
 
